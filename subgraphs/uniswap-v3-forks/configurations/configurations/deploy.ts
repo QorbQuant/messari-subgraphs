@@ -17,5 +17,6 @@ export namespace Deploy {
   export const SUSHISWAP_V3_GNOSIS = 15;
   export const SUSHISWAP_V3_MOONRIVER = 16;
   export const SUSHISWAP_V3_OPTIMISM = 17;
-  export const SUSHISWAP_V3_POLYGON = 18;
+  export const SUSHISWAP_V3_POLYGON = 18
+  export const UNISWAP_V3_AVALANCHE = 19;
 }

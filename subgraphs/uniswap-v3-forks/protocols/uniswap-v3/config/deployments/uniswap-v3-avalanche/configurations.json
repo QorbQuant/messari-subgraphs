@@ -1,0 +1,12 @@
+{
+    "network": "avalanche",
+    "factoryAddress": "0x740b1c1de25031c31ff4fc9a62f554a55cdc1bad",
+    "factoryAddressStartBlock": 27832972,
+    "nonFungiblePositionManagerAddress": "0x655c406ebfa14ee2006250925e54ec43ad184f8b",
+    "nonFungiblePositionManagerAddressStartBlock": 27833025,
+    "deployment": "UNISWAP_V3_AVALANCHE",
+    "graftEnabled": false,
+    "subgraphId": "QmWQubpffSaCZ8CAG6x9Luwzgoq8xzJg4bkkisBsemiKxq",
+    "graftStartBlock": 192237169
+  }
+  
