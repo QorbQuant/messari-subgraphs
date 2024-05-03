@@ -68,7 +68,7 @@ import {
     }
     getStableOraclePools(): Bytes[] {
       return stringToBytesList([
-        "0x09b852108b6ed78adb2e776d901b8d54ba708080", // usdc-weth 0.05%
+        "0x09b852108b6ed78adb2e776d901b8d54ba708080", // usdc-weth 
         "0x7138D05bE45207Ab40CcE8E50AB5C89207866429", // usdc-weth
         "0xb5dA4Ce320AC01f90b59837c8706406b7706587e", // usdc-weth
       ]);

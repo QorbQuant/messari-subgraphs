@@ -1,5 +1,5 @@
 import { UniswapV3ArbitrumConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-arbitrum/configurations";
-import { UniswapV3BaseConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-base/configurations";
+import { UniswapV3BaseConfigurations } from "../../protocols/uniswap-v3/config/deployments/derpdex-v3-base/configurations";
 import { UniswapV3MainnetConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-ethereum/configurations";
 import { UniswapV3MaticConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-polygon/configurations";
 import { UniswapV3OptimismConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-optimism/configurations";
