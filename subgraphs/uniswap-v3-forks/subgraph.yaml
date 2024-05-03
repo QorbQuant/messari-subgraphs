@@ -1,23 +1,18 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 repository: https://github.com/messari/subgraphs
 schema:
   file: ./schema.graphql
-{{#graftEnabled}}
-description: ...
-graft:
-  base: {{subgraphId}} # Subgraph ID of base subgraph
-  block: {{graftStartBlock}} # Block number
+description: "testing"
 features:
   - grafting
-{{/graftEnabled}}
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: {{network}}
+    network: base
     source:
-      address: "{{factoryAddress}}"
+      address: "0xeddef4273518b137cdbcb3a7fa1c6a688303dfe2"
       abi: Factory
-      startBlock: {{factoryAddressStartBlock}}
+      startBlock: 2753388
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -50,11 +45,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: NonFungiblePositionManager
-    network: {{network}}
+    network: base
     source:
-      address: "{{nonFungiblePositionManagerAddress}}"
+      address: "0xab20a869e43b7fe99b7aa785a70a0f454e28e6c2"
       abi: NonFungiblePositionManager
-      startBlock: {{nonFungiblePositionManagerAddressStartBlock}}
+      startBlock: 2753752 
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -82,7 +77,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: {{network}}
+    network: base
     source:
       abi: Pool
     mapping:
@@ -128,7 +123,7 @@ templates:
 
   - kind: ethereum/contract
     name: UniswapPool
-    network: {{network}}
+    network: base
     source:
       abi: Pool
     mapping:

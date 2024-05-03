@@ -1,0 +1,12 @@
+{
+    "network": "base",
+    "factoryAddress": "0xeddef4273518b137cdbcb3a7fa1c6a688303dfe2",
+    "factoryAddressStartBlock": 2753388,
+    "nonFungiblePositionManagerAddress": "0xab20a869e43b7fe99b7aa785a70a0f454e28e6c2",
+    "nonFungiblePositionManagerAddressStartBlock": 2753752,
+    "deployment": "DERPDEX_V3_BASE",
+    "graftEnabled": false,
+    "subgraphId": "",
+    "graftStartBlock": 0
+  }
+  
