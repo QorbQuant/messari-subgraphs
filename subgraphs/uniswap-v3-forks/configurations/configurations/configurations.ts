@@ -18,6 +18,7 @@ import { SushiswapV3MoonriverConfigurations } from "../../protocols/sushiswap-v3
 import { SushiswapV3OptimismConfigurations } from "../../protocols/sushiswap-v3/config/deployments/sushiswap-v3-optimism/configurations";
 import { SushiswapV3PolygonConfigurations } from "../../protocols/sushiswap-v3/config/deployments/sushiswap-v3-polygon/configurations";
 import { DerpdexV3BaseConfigurations } from "../../protocols/uniswap-v3/config/deployments/derpdex-v3-base/configurations";
+import { TrinityFraxtalConfigurations } from "../../protocols/uniswap-v3/config/deployments/fraxtal-testnet-trinity/configurations";
 import { Configurations } from "./interface";
 import { Deploy } from "./deploy";
 import { log } from "@graphprotocol/graph-ts";
@@ -83,6 +84,9 @@ export function getNetworkConfigurations(deploy: i32): Configurations {
     }
     case Deploy.DERPDEX_V3_BASE: {
       return new DerpdexV3BaseConfigurations();
+    }
+    case Deploy.FRAXTAL_TESTNET_TRINITY: {
+      return new TrinityFraxtalConfigurations();
     }
     default: {
       log.critical(

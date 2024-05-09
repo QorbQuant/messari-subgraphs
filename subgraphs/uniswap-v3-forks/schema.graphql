@@ -15,6 +15,7 @@ enum Network {
   CRONOS
   MAINNET # Ethereum Mainnet
   FANTOM
+  FRAXTAL_TESTNET
   FUSE
   HARMONY
   JUNO

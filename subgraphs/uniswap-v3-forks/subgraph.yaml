@@ -8,11 +8,11 @@ features:
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: base
+    network: fraxtal-testnet
     source:
-      address: "0xeddef4273518b137cdbcb3a7fa1c6a688303dfe2"
+      address: "0xdfaeedcf4056be588ea3574fb1a59c2cec8af84b"
       abi: Factory
-      startBlock: 2753388
+      startBlock: 7157009
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -45,11 +45,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: NonFungiblePositionManager
-    network: base
+    network: fraxtal-testnet
     source:
-      address: "0xab20a869e43b7fe99b7aa785a70a0f454e28e6c2"
+      address: "0x5860d7febdd985bd3fb9e173fad6fc088363c120"
       abi: NonFungiblePositionManager
-      startBlock: 2753752 
+      startBlock: 7157030 
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -77,7 +77,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pool
-    network: base
+    network: fraxtal-testnet
     source:
       abi: Pool
     mapping:
@@ -123,7 +123,7 @@ templates:
 
   - kind: ethereum/contract
     name: UniswapPool
-    network: base
+    network: fraxtal-testnet
     source:
       abi: Pool
     mapping:

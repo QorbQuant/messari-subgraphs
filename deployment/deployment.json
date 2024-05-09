@@ -4121,6 +4121,32 @@
           }
         }
       },
+      "fraxtal-testnet-trinity": {
+        "network": "fraxtal-testnet",
+        "status": "prod",
+        "versions": {
+          "schema": "4.0.1",
+          "subgraph": "1.0.2",
+          "methodology": "1.0.0"
+        },
+        "files": {
+          "template": "uniswapV3Template.yaml"
+        },
+        "options": {
+          "prepare:yaml": true,
+          "prepare:constants": true
+        },
+        "services": {
+          "hosted-service": {
+            "slug": "fraxtal-testnet-trinity",
+            "query-id": "fraxtal-testnet-trinity"
+          },
+          "decentralized-network": {
+            "slug": "fraxtal-testnet-trinity",
+            "query-id": "FUbEPQw1oMghy39fwWBFY5fE6MXPXZQtjncQy2cXdrNS"
+          }
+        }
+      },
       "uniswap-v3-bsc": {
         "network": "bsc",
         "status": "prod",

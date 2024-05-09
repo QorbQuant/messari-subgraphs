@@ -1,0 +1,11 @@
+{
+    "network": "fraxtal-testnet",
+    "factoryAddress": "0xdfaeedcf4056be588ea3574fb1a59c2cec8af84b",
+    "factoryAddressStartBlock": 7157009,
+    "nonFungiblePositionManagerAddress": "0x5860d7febdd985bd3fb9e173fad6fc088363c120",
+    "nonFungiblePositionManagerAddressStartBlock": 7157030,
+    "deployment": "FRAXTAL_TESTNET_TRINITY",
+    "graftEnabled": false,
+    "subgraphId": "",
+    "graftStartBlock": 0
+  }

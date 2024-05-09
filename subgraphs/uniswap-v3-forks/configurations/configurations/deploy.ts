@@ -19,4 +19,5 @@ export namespace Deploy {
   export const SUSHISWAP_V3_OPTIMISM = 17;
   export const SUSHISWAP_V3_POLYGON = 18;
   export const DERPDEX_V3_BASE = 19;
+  export const FRAXTAL_TESTNET_TRINITY = 20;
 }

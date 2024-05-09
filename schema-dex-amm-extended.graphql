@@ -16,6 +16,7 @@ enum Network {
   MAINNET # Ethereum Mainnet
   FANTOM
   FUSE
+  FRAXTAL_TESTNET
   HARMONY
   JUNO
   MOONBEAM
