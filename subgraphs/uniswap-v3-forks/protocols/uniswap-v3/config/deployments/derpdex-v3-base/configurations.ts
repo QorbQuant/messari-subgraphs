@@ -17,7 +17,7 @@ import {
   import { PROTOCOL_NAME, PROTOCOL_SLUG } from "../../../src/common/constants";
   import { stringToBytesList } from "../../../../../src/common/utils/utils";
   
-  export class UniswapV3BaseConfigurations implements Configurations {
+  export class DerpdexV3BaseConfigurations implements Configurations {
     getNetwork(): string {
       return Network.BASE;
     }

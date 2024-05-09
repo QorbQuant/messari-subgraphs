@@ -1,5 +1,5 @@
 import { UniswapV3ArbitrumConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-arbitrum/configurations";
-import { UniswapV3BaseConfigurations } from "../../protocols/uniswap-v3/config/deployments/derpdex-v3-base/configurations";
+import { UniswapV3BaseConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-base/configurations";
 import { UniswapV3MainnetConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-ethereum/configurations";
 import { UniswapV3MaticConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-polygon/configurations";
 import { UniswapV3OptimismConfigurations } from "../../protocols/uniswap-v3/config/deployments/uniswap-v3-optimism/configurations";
@@ -17,6 +17,7 @@ import { SushiswapV3GnosisConfigurations } from "../../protocols/sushiswap-v3/co
 import { SushiswapV3MoonriverConfigurations } from "../../protocols/sushiswap-v3/config/deployments/sushiswap-v3-moonriver/configurations";
 import { SushiswapV3OptimismConfigurations } from "../../protocols/sushiswap-v3/config/deployments/sushiswap-v3-optimism/configurations";
 import { SushiswapV3PolygonConfigurations } from "../../protocols/sushiswap-v3/config/deployments/sushiswap-v3-polygon/configurations";
+import { DerpdexV3BaseConfigurations } from "../../protocols/uniswap-v3/config/deployments/derpdex-v3-base/configurations";
 import { Configurations } from "./interface";
 import { Deploy } from "./deploy";
 import { log } from "@graphprotocol/graph-ts";
@@ -79,6 +80,9 @@ export function getNetworkConfigurations(deploy: i32): Configurations {
     }
     case Deploy.SUSHISWAP_V3_POLYGON: {
       return new SushiswapV3PolygonConfigurations();
+    }
+    case Deploy.DERPDEX_V3_BASE: {
+      return new DerpdexV3BaseConfigurations();
     }
     default: {
       log.critical(
