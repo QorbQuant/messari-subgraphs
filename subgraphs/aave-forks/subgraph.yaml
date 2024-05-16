@@ -3,22 +3,17 @@ schema:
   file: ./schema.graphql
 indexerHints:
   prune: auto
-{{#graftEnabled}}
-description: ...
+description: "Seamless protocol subgraph"
 features:
   - grafting
-graft:
-  base: {{subgraphId}} # Subgraph ID of base subgraph
-  block: {{graftStartBlock}} # Block number
-{{/graftEnabled}}
 dataSources:
   - kind: ethereum
     name: LendingPoolAddressesProvider
-    network: {{ network }}
+    network: base
     source:
       abi: LendingPoolAddressesProvider
-      address: "{{ factory.address }}"
-      startBlock: {{ factory.startBlock }}
+      address: "0x0e02eb705be325407707662c6f6d3466e939f3a0"
+      startBlock: 3318552
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -33,11 +28,11 @@ dataSources:
       file: ./protocols/aave-v3/src/mapping.ts
   - kind: ethereum
     name: LendingPoolConfigurator
-    network: {{ network }}
+    network: base
     source:
       abi: LendingPoolConfigurator
-      address: "{{ lendingPoolConfigurator.address }}"
-      startBlock: {{ lendingPoolConfigurator.startBlock }}
+      address: "0x7b08a77539a50218c8fb4b706b87fb799d3505a0"
+      startBlock: 3318607
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -80,11 +75,11 @@ dataSources:
       file: ./protocols/aave-v3/src/mapping.ts
   - kind: ethereum
     name: LendingPool
-    network: {{ network }}
+    network: base
     source:
       abi: LendingPool
-      address: "{{ LendingPool.address }}"
-      startBlock: {{ LendingPool.startBlock }}
+      address: "0x8f44fd754285aa6a2b8b9b97739b79746e0475a7"
+      startBlock: 3318602
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -141,11 +136,11 @@ dataSources:
 
   - kind: ethereum
     name: RewardsController
-    network: {{ network }}
+    network: base
     source:
-      address: "{{ RewardsController.address }}"
+      address: "0x91ac2fff8cbef5859eaa6dda661febd533cd3780"
       abi: RewardsController
-      startBlock: {{ RewardsController.startBlock }}
+      startBlock: 3318629
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -173,7 +168,7 @@ dataSources:
 templates:
   - kind: ethereum
     name: AToken
-    network: {{ network }}
+    network: base
     source:
       abi: AToken
     mapping:
@@ -193,7 +188,7 @@ templates:
       file: ./protocols/aave-v3/src/mapping.ts
   - kind: ethereum
     name: StableDebtToken
-    network: {{ network }}
+    network: base
     source:
       abi: StableDebtToken
     mapping:
@@ -212,7 +207,7 @@ templates:
       file: ./protocols/aave-v3/src/mapping.ts
   - kind: ethereum
     name: VariableDebtToken
-    network: {{ network }}
+    network: base
     source:
       abi: VariableDebtToken
     mapping:

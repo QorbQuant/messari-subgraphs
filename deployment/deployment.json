@@ -561,6 +561,32 @@
           }
         }
       },
+      "seamless-base": {
+        "network": "base",
+        "status": "prod",
+        "versions": {
+          "schema": "3.1.0",
+          "subgraph": "1.4.0",
+          "methodology": "1.1.0"
+        },
+        "files": {
+          "template": "aave.v3.template.yaml"
+        },
+        "options": {
+          "prepare:yaml": true,
+          "prepare:constants": false
+        },
+        "services": {
+          "hosted-service": {
+            "slug": "seamless-base",
+            "query-id": "seamless-base"
+          },
+          "decentralized-network": {
+            "slug": "seamless-base",
+            "query-id": "D7mapexM5ZsQckLJai2FawTKXJ7CqYGKM8PErnS3cJi9"
+          }
+        }
+      },
       "aave-v3-gnosis": {
         "network": "gnosis",
         "status": "prod",

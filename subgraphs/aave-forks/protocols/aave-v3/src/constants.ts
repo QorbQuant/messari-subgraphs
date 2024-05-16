@@ -88,7 +88,7 @@ export function getNetworkSpecificConstant(): NetworkSpecificConstant {
     );
   } else if (equalsIgnoreCase(network, Network.BASE)) {
     return new NetworkSpecificConstant(
-      Address.fromString("0xe20fcbdbffc4dd138ce8b2e6fbb6cb49777ad64d"),
+      Address.fromString("0x0e02eb705be325407707662c6f6d3466e939f3a0"),
       Network.BASE
     );
   } else if (equalsIgnoreCase(network, Network.GNOSIS)) {
