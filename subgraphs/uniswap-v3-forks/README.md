@@ -1,5 +1,14 @@
 # Uniswap v3 Subgraph
 
+Script to deploy the subgraph
+
+```sh
+npm run prepare:constants
+npm run build
+npm run create-fraxtal-testnet
+npm run deploy-fraxtal-testnet
+```
+
 ## Optimism Regenesis
 
 Because of a regenesis event on Optimism, many of the liquidity pools have to be manually instantiated at the start of the program. This is because all of the liquidity pool contracts that were created before regenesis do not have a corresponding event from the factory contract upon indexing the post-regenesis chain. The state of these contracts were maintained, however, we are not able to recover volume, fee, swap, deposit, and withdraw data from before regenesis.

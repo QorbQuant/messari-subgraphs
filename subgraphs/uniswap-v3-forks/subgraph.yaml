@@ -10,7 +10,7 @@ dataSources:
     name: Factory
     network: frax-testnet
     source:
-      address: "0xc77F6B89d047d335dC1B703d131796338615512c"
+      address: '0xc77F6B89d047d335dC1B703d131796338615512c'
       abi: Factory
       startBlock: 9777988
     mapping:
@@ -47,7 +47,7 @@ dataSources:
     name: NonFungiblePositionManager
     network: frax-testnet
     source:
-      address: "0xD558e8830aDa547E11f7e58963a141C0A458742D"
+      address: '0xD558e8830aDa547E11f7e58963a141C0A458742D'
       abi: NonFungiblePositionManager
       startBlock: 9778026 
     mapping:
