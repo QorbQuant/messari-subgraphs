@@ -6,7 +6,7 @@
     "build": "graph build",
     "prepare:constants": "mustache protocols/uniswap-v3/config/deployments/fraxtal-testnet-trinity/configurations.json configurations/configure.mustache > configurations/configure.ts",
     "create-fraxtal-testnet": "graph create --node http://52.11.39.166:8020 stablyio-uniswap-v3-messari-testnet",
-    "deploy-fraxtal-testnet": "graph deploy stablyio-uniswap-v3-messari-testnet --ipfs https://api.thegraph.com/ipfs/ --node http://52.11.39.166:8020"
+    "deploy-fraxtal-testnet": "graph deploy stablyio-uniswap-v3-messari-testnet --ipfs http://52.11.39.166:5001 --node http://52.11.39.166:8020"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.55.0",
